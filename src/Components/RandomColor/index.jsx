@@ -9,7 +9,6 @@ export default function RandomColor() {
     function randomGenerator(length){
         return Math.floor(Math.random()*length)
     }
-    console.log(Math.floor(Math.random()*3))
     function handleHexColor(){
         const hex=[1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
         let hexText='#'
@@ -41,7 +40,9 @@ export default function RandomColor() {
 
       }}
     >
-      <section  className="buttons-container">
+      <section style={{
+        display:'flex',gap:'20px'
+      }}  className="buttons-container">
         <button onClick={()=>setType('hex')}>change to hex</button>
         <button onClick={()=>setType('rgb')}>change to rgb</button>
         <button onClick={type==='hex'?handleHexColor:handleRgbColor}> random color</button>
@@ -50,9 +51,14 @@ export default function RandomColor() {
         style={{
           width: "100%",
           height: "100%",
+          display:'flex'
+          ,flexDirection:'column',
+          justifyContent:'center',
+          alignItems:'center'
         }}
         className="color"
       >
+        <h1>{type==='hex'?'HEX COLOR ':'RGB COLOR'}</h1>
         {type==='hex'? <h3 className="color-text">
             {color}
         </h3>:<h3 className="color-text">
