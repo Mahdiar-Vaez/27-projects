@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    height: 500px;
+    background-color: crimson;
+    gap: 20px;
+    position: relative;
+}
+.img-holder{
+    display: flex !important;
+    height: 400px;
+    padding: 20px;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.current-image{
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+.right-arrow , .left-arrow{
+  font-size: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+.left-arrow{
+    left: 5%;
+}
+.right-arrow{
+    right: 5%;
+}
+.circle-indicators{
+    display: flex;
+    gap: 20px;
+}
+.current-indicator{
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    border: none;
+    outline: none;
+}
+.hidden{
+    display: none;
+}
+/* for button  */
+.update{  background-color: gray !important;
+  
+}
