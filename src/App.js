@@ -1,5 +1,6 @@
 import React from 'react'
 import LoadMoreProducts from './Components/LoadMoreProducts/LoadMoreProducts'
+import QrScanner from './Components/QrCode/QrScanner'
 // import Slider from './Components/ImageSlider/Slider'
 // import Accordion from './Components/Accordion/Accordion'
 // import RandomColor from './Components/RandomColor'
@@ -12,7 +13,8 @@ export default function App() {
       {/* <RandomColor/> */}
       {/* <StarRating/> */}
       {/* <Slider url={ 'https://picsum.photos/v2/list'} limit={4}/> */}
-      <LoadMoreProducts />
+      {/* <LoadMoreProducts /> */}
+      <QrScanner/>
       </div>
   )
 }
