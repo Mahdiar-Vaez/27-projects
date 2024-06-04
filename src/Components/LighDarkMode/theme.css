@@ -1,0 +1,36 @@
+:root{
+    --background:#ffffff;
+    --text-primary:#000;
+    --button-bg:#000;
+    --button-text:#ffffff;
+
+}
+[data-theme='dark']{
+    --background:#000000;
+    --text-primary:#ffffff;
+    --button-bg:#ffffff;
+    --button-text:#000000;
+}
+.light-dark-mode{
+    background-color: var(--background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 20px;
+    transition: all .5s;
+
+}
+.p{
+    color: var(--text-primary);
+    font-size: 40px;
+}
+button{
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-bg);
+    color: var(--button-text);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
