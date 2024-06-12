@@ -62,7 +62,7 @@ export default function RandomColor() {
         {type==='hex'? <h3 className="color-text">
             {color}
         </h3>:<h3 className="color-text">
-            {'rgb'+color}
+            {'rgb'+color} x
             </h3>}
        
       </section>
