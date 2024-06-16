@@ -1,0 +1,32 @@
+.github-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+ 
+}
+.input-wrapper{
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+
+}
+.input-wrapper input,button{
+    outline: none;
+    border: none;
+}
+.input-wrapper button:hover{
+    color: black;
+    background-color: rgb(100, 98, 98);
+}
+.user{
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

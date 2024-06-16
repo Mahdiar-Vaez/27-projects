@@ -4,6 +4,8 @@ import QrScanner from './Components/QrCode/QrScanner'
 import LightDarkMode from './Components/LighDarkMode/LightDarkMode'
 import ScrollIndicator from './Components/ScrollIndicator'
 import TabTest from './Components/tabComponents/Tab-Test'
+import ModalTest from './Components/Modal/Modal-test'
+import GitHubUserFinder from './Components/GitHubUserFinder/GitHubUserFinder'
 // import Slider from './Components/ImageSlider/Slider'
 // import Accordion from './Components/Accordion/Accordion'
 // import RandomColor from './Components/RandomColor'
@@ -20,7 +22,9 @@ export default function App() {
       {/* <QrScanner/> */}
       {/* <LightDarkMode/> */}
       {/* <ScrollIndicator/> */}
-      <TabTest/>
+      {/* <TabTest/> */}
+      {/* <ModalTest/> */}
+      <GitHubUserFinder/>
       </div>
   )
 }

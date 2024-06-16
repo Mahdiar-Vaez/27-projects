@@ -1,0 +1,26 @@
+
+
+.modal-component{
+    height: 400px !important;
+    width: 500px!important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+    transition: all .5s;
+    opacity: 0;
+    scale: 0;
+}
+.active{
+    opacity: 1;
+    scale: 1;
+    transition: all 1s;
+    transform: translate(-50%, -50%)!important;
+
+    
+}
