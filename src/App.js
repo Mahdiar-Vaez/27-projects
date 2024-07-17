@@ -8,11 +8,13 @@ import ModalTest from './Components/Modal/Modal-test'
 import GitHubUserFinder from './Components/GitHubUserFinder/GitHubUserFinder'
 import SearchAutoComplete from './Components/SearchAutoCompelete/SearchAutoComplete'
 import TicTacToe from './Components/Tic-Tac-Toe'
+import FeaturesFlags from './Components/Features-Flags'
+import FeaturesFlagglobalState from './Components/Features-Flags/Context'
 // import Slider from './Components/ImageSlider/Slider'
 // import Accordion from './Components/Accordion/Accordion'
 // import RandomColor from './Components/RandomColor'
 // import StarRating from './Components/StarRating'
-
+import UseFetchHookTest from './Components/CustomeHooks/Fetch/test'
 export default function App() {
   return (
     <div>
@@ -28,8 +30,11 @@ export default function App() {
       {/* <ModalTest/> */}
       {/* <GitHubUserFinder/> */}
       {/* <SearchAutoComplete/> */}
-      <TicTacToe/>
-
+      {/* <TicTacToe/> */}
+      {/* <FeaturesFlagglobalState >
+        <FeaturesFlags/>
+      </FeaturesFlagglobalState> */}
+      <UseFetchHookTest/>
       </div>
   )
 }

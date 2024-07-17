@@ -14,7 +14,9 @@ export default function TicTacToe() {
   const [squares, setSquares] = useState(Array(9).fill('')) // Game board squares
   const [isX, setIsX] = useState(true) // Current player
   const [status, setStatus] = useState() // Game status
-
+  const array=[
+    1,2,3,4,5,6,7,8,9
+  ]
   // Function to handle a square click
   const handleClick = (getCurrentSquare) => {
     let cpySquares = [...squares] // Create a copy of the squares array
@@ -50,10 +52,10 @@ export default function TicTacToe() {
     // If no winner is found, return an empty string
     return '';
   }
-
+  console.log(array.every((item)=>item===1))
   // Effect hook to update the game status after each move
   useEffect(() => {
-    const winner = getWinner(squares);
+  const winner = getWinner(squares);
     if (winner) {
       setStatus(`Winner is ${winner}`); // Update the status with the winner's symbol
     } else if (!winner && squares.every((item) => item !== '')) {
@@ -83,5 +85,6 @@ export default function TicTacToe() {
       </div>
       <h1>{status}</h1>
     </div>
+
   )
 }
