@@ -15,6 +15,10 @@ import FeaturesFlagglobalState from './Components/Features-Flags/Context'
 // import RandomColor from './Components/RandomColor'
 // import StarRating from './Components/StarRating'
 import UseFetchHookTest from './Components/CustomeHooks/Fetch/test'
+import UseOnClickOutside from './Components/useOutsideHook/test'
+import UseWindowResize from './Components/use-window-resize'
+import UseWindowResizeTest from './Components/use-window-resize/test'
+import ScrollToTopBottom from './Components/scroll-top-bottom'
 export default function App() {
   return (
     <div>
@@ -34,7 +38,10 @@ export default function App() {
       {/* <FeaturesFlagglobalState >
         <FeaturesFlags/>
       </FeaturesFlagglobalState> */}
-      <UseFetchHookTest/>
+      {/* <UseFetchHookTest/> */}
+      {/* <UseOnClickOutside/> */}
+      {/* <UseWindowResizeTest/> */}
+      <ScrollToTopBottom/>
       </div>
   )
 }
